@@ -17,12 +17,18 @@ public class Operations {
         System.out.println("git modify");
         StringBuilder build = new StringBuilder();
         int count = (int) (Math.random() * 2) + 1; // generate random count
+        System.out.println("---"+count+ "---");
         int start = 0;
         int number1 = (int) (Math.random() * 99) + 1;
+        System.out.println("--- "+number1+ " ---");
         build.append(number1);
         while (start <= count){
             int operation = (int) (Math.random() * 3); // generate operator
+            System.out.println("--- "+operation+ " ---");
+
             int number2 = (int) (Math.random() * 99) + 1;
+            System.out.println("--- "+number2+ " ---");
+
             build.append(op[operation]).append(number2);
             start ++;
         }

@@ -17,9 +17,26 @@ class OperationsTest {
     }
 
     @Test
-    void makeFormula() {
-        
+    void makeFormula(){
+
     }
+    @Test
+    void testMakeFormulaRetornoNoNulo() {
+        String formula = Operations.MakeFormula();
+        assertNotNull(formula);
+        assertFalse(formula.isEmpty());
+    }
+    @Test
+    void testMakeFormulaComienzaConNumero() {
+        String formula = Operations.MakeFormula();
+        char firstChar = formula.charAt(0);
+        assertTrue(Character.isDigit(firstChar), "La fórmula no comienza con un dígito.");
+    }
+
+    
+
+
+
 
     @Test
     void solve() {
