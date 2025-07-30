@@ -18,9 +18,11 @@ class OperationsTest {
 
     @Test
     void makeFormula() {
+        
     }
 
     @Test
     void solve() {
     }
+
 }
